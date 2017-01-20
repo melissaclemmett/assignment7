@@ -288,5 +288,9 @@ footer p {
   font-weight: 600;
 }
 
+/****************MOBILE****************/
+
+@media (max-width: 768px) {
 
 
+}
