@@ -1,0 +1,94 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header #desktopMenu {
+  display: flex;
+}
+
+header #desktopMenu div {
+  min-width: 80px;
+  min-height: 40px;
+  background: grey;
+  margin-right: 10px;
+}
+
+#hamburger-trigger {
+  min-width: 80px;
+  min-height: 40px;
+  background-color: grey;
+  display: none;
+}
+
+#hero-image {
+  margin: 10px 0;
+  width: 100%;
+  min-height: 200px;
+  background: green;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links div {
+  min-width: 250px;
+  min-height: 100px;
+  background: pink;
+}
+
+#ads {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-around;
+  background: cyan;
+  padding: 20px;
+}
+
+#ads div {
+  min-width: 250px;
+  min-height: 100px;
+  background: yellow;
+}
+
+/****************MOBILE****************/
+
+@media (max-width: 768px) {
+  header #desktopMenu {
+    display: none;
+  }
+
+  #hamburger-trigger {
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+
+  #mobileMenu {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 4s;
+  }
+
+  #mobileMenu.active {
+    max-height: 1000px;
+  }
+
+  #mobileMenu div {
+    width: 100%;
+    min-height: 40px;
+    background: red;
+    margin: 5px 0;
+  }
+
+  #links {
+    flex-direction: column;
+  }
+
+  #links div {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
