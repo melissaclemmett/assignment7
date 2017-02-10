@@ -5,80 +5,80 @@ body {
 }
 
 header {
+  position: fixed;
   color: white;
   background: #033048;
   width: 100%;
   height: 117px;
 }
 
+.headerContainer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 header .logo {
   font-weight: 800;
-  font-size: 48px;
+  font-size: 3rem;
   float: left;
-  padding-left: 470px;
-  padding-right: 0;
-  padding-top: 25px;
+  margin-top: 25px;
+  margin-left: 0;
 }
 
-header h1 {
-  font-weight: 600;
-  font-size: 24px;
-}
-
-header nav ul {
-  padding-right: 425px;
-  padding-top: 25px;
+header nav {
+  float: right;
+  margin-top: 25px;
 }
 
 header nav ul li {
   display: inline-block;
-  margin: 0 0 0 40px;
-}
-
-header nav {
-  font-weight: 600;
-  font-size: 24px;
-  float: right;
-  margin-top: 15px
-  margin-right: 200px;
+  margin: 0 0 0 1.6em;
+  font-size: 1.5rem;
 }
 
 header nav a {
   color: #f9e42e;
 }
 
+#hamburger-trigger{
+  min-width: 80px;
+  min-height: 40px;
+  display: none;
+}
+
 #hero {
+  margin-top: 117px;
+  width: 100%;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 700px;
-  background: url("../images/header_bg.jpg") no-repeat top center #131e27;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
 }
 
 .container {
-  width: 960px;
+  width: 50%;
   margin: 0 auto;
 }
 
 #hero h1 {
   color: white;
-  font-size: 48px;
+  font-size: 3rem;
+  font-weight: 600;
   text-align: center;
   padding-top: 120px;
   padding-bottom: 60px;
 }
 
-div.placeholder {
+.yellowButton {
   background-color: #f9e42e;
+  color: #033048;
   font-weight: 800;
   font-size: 28px;
   border-radius: 5px;
   height: 30px;
   width: 280px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,14 +87,6 @@ div.placeholder {
 
 a:link {
   text-decoration: none;
-}
-
-a.headerLink {
-  color: #033048;
-}
-
-a.sectionLink {
-  color: white
 }
 
 a:hover {
@@ -115,10 +107,7 @@ main.blog div section a:hover {
   justify-content: flex-start;
   width: 100%;
   background: white;
-  height: 594px;
-  padding: 0;
-  margin: 0;
-  /*padding: 100px 0 80px;*/
+  padding: 100px 0 80px;
 }
 
 main {
@@ -130,61 +119,85 @@ main {
 
 #benefits p {
   margin: 0;
-  padding-bottom: 85px;
-  width: 600px;
   display: flex;
   flex-direction: flex-start;
 }
 
 #benefits ul {
-  margin: 50px 0 0 40px;
+  margin: 30px 0 0 1.5em;
   list-style: disc;
-  width: 600px;
 }
 
-.text {
+#benefits p, #benefits ul {
+  width: 80%;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 1.7rem;
   color: #606161;
-  background-color: white;
-  width: 960px;
-  height: 414px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: 0 auto;
 }
 
 #benefits h2 {
   color: #033048;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5rem;
   width: 100%;
-  margin-top: 100px;
   padding-bottom: 5px;
+  margin-top: 0;
 }
 
-aside.left {
-  width: 3px;
+#testimonial {
+  width: 100%;
+  background: url("../images/testimonial_bg.jpg") no-repeat top center #071324;
+  background-size: auto 100%;
+  color: white;
+  padding: 70px 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+blockquote {
+  font-size: 2.2rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 62%;
   height: auto;
+  margin: 0 auto;
+}
+
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
 }
 
 main.blog {
-  display: flex;
-  width: 100%;
+  margin-top: 125px;
   color: #606161;
   background-color: white;
 }
 
+.blogContainer {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+}
+
 main.blog h1 {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #033048;
 }
 
-main.blog div {
-  min-width: 700px;
-  padding-right: 20px;
+main.blog img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blogPosts {
+  width: 73%;
+  padding-right: 2%;
+  margin-bottom: 40px;
 }
 
 main.blog section {
@@ -194,34 +207,32 @@ main.blog section {
   flex-flow: column wrap;
 }
 
-main.blog div section {
+.blogPosts section {
   padding: 20px 0px 20px 0px;
   border-bottom: 1px solid #033048;
   display: flex;
   align-items: flex-start;
-  width: 700px;
 }
 
-main.blog div section p {
+.blogPosts section p {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 15px 0 0 0;
   display: inline-block;
   text-align: left;
-  width: 700px;
 }
 
-main.blog div section p:first-of-type:first-letter {
+.blogPosts section p:first-of-type:first-letter {
   font-weight: 600;
-  font-size: 80px;
-  line-height: 65px;
+  font-size: 5rem;
+  line-height: 4.4rem;
   float: left;
-  padding: 4px 8px 0 3px;
+  padding: 4px 0.1em 0 0.05em;
 }
 
-main.blog div section a {
+.blogPosts section a {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #033048;
   display: inline-block;
   width: 100%;
@@ -229,7 +240,7 @@ main.blog div section a {
 }
 
 .sidebar {
-  width: 240px;
+  width: 25%;
   height: auto;
   border-color: red;
   padding-top: 45px;
@@ -242,59 +253,33 @@ main.blog div section a {
 aside nav ul {
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 0;
+  padding: 0;
 }
 
 aside nav ul li a {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 aside h2 {
   font-weight: 800;
-  font-size: 32px;
+  font-size: 2rem;
   text-align: left;
 }
 
 aside p {
   text-align: left;
-  width: 220px;
+  width: 100%;
   font-weight: 300;
-  font-size: 22px;
-  line-height: 1.1;
+  font-size: 1.4rem;
+  line-height: 1;
   color: #033048;
 }
 
 aside a {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.4rem;
   color: #033048;
-}
-
-#testimonial {
-  background: url("../images/testimonial_bg.jpg") no-repeat top center #071324;
-  color: white;
-  width: 100%;
-  height: 390px;
-  /*padding: 70px 0 70px;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-#testimonial div p {
-  font-size: 36px;
-  font-weight: 300;
-  text-align: center;
-  padding-left: 190px;
-  padding-right: 190px;
-}
-
-div p span {
-  font-weight: 600;
 }
 
 #signUp {
@@ -303,21 +288,13 @@ div p span {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 1.9em;
 }
 
-.endSpace {
-  display: flex;
-  flex-direction: column;
-  height: 50px;
-  width: 100%;
-  background-color: white;
-}
-
-section.placeholder {
+.blueButton {
   color: white;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5rem;
   border-radius: 5px;
   height: 30px;
   width: 280px;
@@ -331,7 +308,7 @@ section.placeholder {
 
 footer .logo {
   color: #f9e42e;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
   padding-top: 40px;
   padding-bottom: 50px;
@@ -352,34 +329,171 @@ footer {
 
 footer ul li {
   display: inline-block;
-  /*padding: 0 26px 0 2px;*/
-  margin: 0 26px 0px;
-  font-size: 32px;
+  margin: 0 0.8em 0;
+  font-size: 2rem;
 }
 
 footer ul li a {
   color: white
 }
 
-nav {
+footer nav {
   padding-left: 0;
-  padding-right: 30px;
+  padding-right: 2em;
 }
 
 footer p {
   color: white;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600;
   padding-bottom: 15px;
   padding-top: 40px;
   margin-bottom: 0;
 }
 
-.hide {
+.hide, #showThisOnClick, #readLess {
   display: none;
 }
 
-#showThisOnClick,
-#readLess {
-  display: none;
+/****************MOBILE****************/
+
+@media (max-width: 768px) {
+  header #desktopMenu {
+    display: none;
+  }
+
+  .headerContainer {
+    width: 100%;
+  }
+
+  #hamburger-trigger {
+    width: 100%;
+    display: block;
+  }
+
+  #mobileMenu {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 4s;
+  }
+
+  #mobileMenu.active {
+    max-height: 1000px;
+  }
+
+  #mobileMenu li {
+    width: 100%;
+    min-height: 40px;
+    background-color: red;
+    margin: 5px 0;
+  }
+
+  #mobileMenu li a:hover {
+    color: #606161;
+  }
+
+  header i.fa {
+    color: #f9e42e;
+    font-size: 3.15rem;
+    display: block;
+    text-align: right;
+    padding: 0.65em 0.3em 0.65em 0;
+  }
+
+  header .logo {
+    padding-left: 0.65em;
+  }
+
+  #hero {
+    background-size: 752px auto;
+    height: 435px;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #benefits {
+    padding: 50px 0 40px;
+  }
+
+  #benefits h2 {
+    font-size: 2rem;
+  }
+
+  #benefits p, #benefits ul {
+    font-size: 1.2rem;
+  }
+
+  #benefits ul {
+    margin: 30px 0 0 0.5em;
+    list-style: disc;
+  }
+
+  blockquote {
+    font-size: 1.8rem;
+  }
+
+  .blogContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 3.5em 0.5em 0 0.5em;
+  }
+
+  .blogPosts {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0;
+  }
+
+  .blogContainer {
+    margin-top: 0;
+  }
+
+  main.blog h1 {
+    font-size: 2rem;
+    margin: 0 0 0.2em 0;
+  }
+
+  .blogPosts section p:first-of-type:first-letter {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 2px 0.08em 0 0.04em;
+  }
+
+  .blogPosts section p {
+    font-size: 1.2rem;
+    padding-top: 5px;
+  }
+
+  .blogPosts section a {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    height: 270px;
+  }
+
+  footer .logo {
+    padding: 0;
+  }
+
+  footer p {
+    padding: 0;
+  }
+
+  div.placeholder, section.placeholder{
+    width: 200px;
+  }
 }

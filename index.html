@@ -12,26 +12,40 @@
 
   <body>
     <header>
-      <div class="logo">Relaxr</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
+      <div class="headerContainer">
+        <div class="logo">Relaxr</div>
+          <nav id="desktopMenu">
+            <ul class="parent">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="hamburger-trigger">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <nav id="mobileMenu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
 
     <section id="hero">
       <div class="container">
         <h1>Get piece of mind with a single tap</h1>
-        <div class="placeholder"><a href=" " class="headerLink">Get it Now</a></div>
+        <a href=" " class="yellowButton">Get it Now</a></div>
       </div>
     </section>
 
     <section id="benefits">
-      <section class="text">
+      <section class="container">
         <h2>Benefits</h2>
         <p>The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.</p>
         <ul>
@@ -45,13 +59,13 @@
 
     <div id="testimonial">
       <div class="container">
-    	   <p><i>"Relaxr changed my life. I've been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work."</i>
-         <br><span>- Amanda, Intuit</span></p>
+    	   <blockquote>"Relaxr changed my life. I've been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work."
+         <span>- Amanda, Intuit</span></blockquote>
        </div>
     </div>
 
     <section id="signUp">
-      <section class="placeholder"><a href=" " class="sectionLink">Sign Up Now!</a></section>
+      <a href=" " class="blueButton">Sign Up Now!</a></section>
     </section>
 
     <footer>

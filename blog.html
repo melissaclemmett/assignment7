@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Relaxr blog</title>
+    <title>Relaxr Blog</title>
     <link rel="stylesheet" href="css/normalize.css" media="screen" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,800" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -12,74 +12,87 @@
 
   <body>
     <header>
-      <div class="logo">Relaxr</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
+      <div class="headerContainer">
+        <div class="logo">Relaxr</div>
+          <nav id="desktopMenu">
+            <ul class="parent">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="hamburger-trigger">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <nav id="mobileMenu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
 
     <main class="blog">
-      <aside class="left"></aside>
-      <div>
-        <section id="blogPost1">
-          <br>
-          <h1>How I implemented Relaxr in 2 weeks and changed my life.</h1>
-          <img src="images/blog_photo1.jpg" alt="Two rowboats racing">
-          <p class="lessText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et
-              malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a,
-              rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut
-              convallis.</p>
-          <br>
-          <a href="" class="readMore">Read more ></a>
-          <p id="showThisOnClick">Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio.
-              Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
-          <br>
-          <a href="" id="readLess">Read less ></a>
-          <hr>
+      <div class="blogContainer">
+        <section class="blogPosts">
+          <section id="blogPost1">
+            <br>
+            <h1>How I implemented Relaxr in 2 weeks and changed my life.</h1>
+            <img src="images/blog_photo1.jpg" alt="Two rowboats racing">
+            <p class="lessText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et
+                malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a,
+                rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut
+                convallis.</p>
+            <br>
+            <a href="" class="readMore">Read more ></a>
+            <p id="showThisOnClick">Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio.
+                Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+            <br>
+            <a href="" id="readLess">Read less ></a>
+            <hr>
+          </section>
+
+          <section id="blogPost2">
+            <h1>I travelled across the globe thanks to Relaxr's Excel automation</h1>
+            <img src="images/blog_photo2.jpg" alt="Boats on a lake in Asia">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et
+                malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a,
+                rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut
+                convallis.</p>
+            <br>
+            <hr>
+          </section>
         </section>
 
-        <section id="blogPost2">
-          <h1>I travelled across the globe thanks to Relaxr's Excel automation</h1>
-          <img src="images/blog_photo2.jpg" alt="Boats on a lake in Asia">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et
-              malesuada fames ac turpis egestas. Mauris ut vulputate nisl. Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a,
-              rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut
-              convallis.</p>
-          <br>
-          <hr>
-        </section>
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <nav>
+              <ul>
+                <li><a href="" class="categories">Success stories</a></li>
+                <li><a href="" class="categories">Stats</a></li>
+                <li><a href="" class="categories">How tos</a></li>
+                <li><a href="" class="categories">Best of</a></li>
+                <li><a href="" class="categories">Business tips</a></li>
+              </ul>
+            </nav>
+
+            <h2>About Relaxr</h2>
+            <p>Proin sed justo vel sapien varius auctor. Prion scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.<br>
+            <a href="" class="learnMore">Learn more</a> <span class="hide" id="learnMoreText">Here is some more text about this fun thing!</span></p>
+            <br>
+            <br>
+            <a href=""><img src="images/ad-unit.png" alt="Ad unit"></a>
+        </aside>
       </div>
-
-      <aside class="sidebar">
-          <h2>Categories</h2>
-          <nav>
-            <ul>
-              <li><a href="" class="categories">Success stories</a></li>
-              <li><a href="" class="categories">Stats</a></li>
-              <li><a href="" class="categories">How tos</a></li>
-              <li><a href="" class="categories">Best of</a></li>
-              <li><a href="" class="categories">Business tips</a></li>
-            </ul>
-          </nav>
-
-          <h2>About Relaxr</h2>
-          <p>Proin sed justo vel sapien varius auctor. Prion scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.<br>
-          <a href="" class="learnMore">Learn more</a> <span class="hide" id="learnMoreText">Here is some more text about this fun thing!</span></p>
-          <br>
-          <br>
-          <a href=""><img src="images/ad-unit.png" alt="Ad unit"></a>
-      </aside>
     </main>
 
-    <div class="endSpace"></div>
-
     <section id="signUp">
-      <section class="placeholder"><a href=" " class="sectionLink">Sign Up Now!</a></section>
+      <a href=" " class="blueButton">Sign Up Now!</a></section>
     </section>
 
     <footer>

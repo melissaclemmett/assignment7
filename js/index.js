@@ -1,6 +1,9 @@
 $(document).ready(function(){
   // alert("TEST");
-  // $(".hide").hide();
+  $("#hamburger-trigger").click(function(){
+    $("#mobileMenu").toggleClass("active");
+  });
+
   $(".sectionLink").click(function(event){
     event.preventDefault();
     alert("Sorry, we're not taking any new submissions right now!");
